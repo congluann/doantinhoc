@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D00A4640-EB85-458C-90A7-0693B34953B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>doantinhocreal</RootNamespace>
+    <AssemblyName>doantinhocreal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bamgio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bamgio.Designer.cs">
+      <DependentUpon>bamgio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoThuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaoThuc.Designer.cs">
+      <DependentUpon>BaoThuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baothucchinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="baothucchinh.Designer.cs">
+      <DependentUpon>baothucchinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chinhgiobaothuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chinhgiobaothuc.Designer.cs">
+      <DependentUpon>chinhgiobaothuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="donghomin.cs" />
+    <Compile Include="DongHoUserConTrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DongHoUserConTrol.Designer.cs">
+      <DependentUpon>DongHoUserConTrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hengio.cs" />
+    <Compile Include="hengio2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hengio2.Designer.cs">
+      <DependentUpon>hengio2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HenGioControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HenGioControl1.Designer.cs">
+      <DependentUpon>HenGioControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="thebaothucUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="thebaothucUserControl.Designer.cs">
+      <DependentUpon>thebaothucUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bamgio.resx">
+      <DependentUpon>bamgio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoThuc.resx">
+      <DependentUpon>BaoThuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baothucchinh.resx">
+      <DependentUpon>baothucchinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chinhgiobaothuc.resx">
+      <DependentUpon>chinhgiobaothuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DongHoUserConTrol.resx">
+      <DependentUpon>DongHoUserConTrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hengio2.resx">
+      <DependentUpon>hengio2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HenGioControl1.resx">
+      <DependentUpon>HenGioControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="thebaothucUserControl.resx">
+      <DependentUpon>thebaothucUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
